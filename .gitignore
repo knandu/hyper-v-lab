@@ -1,0 +1,33 @@
+# Local media and provisioning transcripts/results.
+images/
+.lab/
+*.vhd
+*.vhdx
+*.avhd
+*.avhdx
+*.iso
+*.vmcx
+*.vmrs
+*.vmgs
+*.log
+
+# Lab credentials and runtime files, including accidental copies into the checkout.
+credential.xml
+id_ed25519*
+id_ecdsa*
+id_rsa*
+id_dsa*
+ssh_host_*_key*
+administrators_authorized_keys
+known_hosts
+known_hosts.*
+environment.json
+state.json
+state.json.tmp
+failover.json
+unattend*.xml
+autounattend*.xml
+*.pfx
+*.p12
+*.pem
+*.key
