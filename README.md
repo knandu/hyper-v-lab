@@ -4,8 +4,18 @@ An independent personal lab by **knandu**, not an official Microsoft project.
 Given a generalized Windows Server 2025 VHDX and a Windows Hyper-V host, this
 repository creates an isolated AD/DNS VM and a three-node Windows Failover
 Cluster. The cluster nodes are not Hyper-V hosts and have no shared storage.
-Provisioning is independent of the workloads or experiments that consume the
-cluster.
+
+## Why this exists
+
+Many distributed-systems, clustering, control-plane, and infrastructure-management
+ideas are difficult to evaluate in isolation. This repository provides a
+reproducible Windows Server substrate that can be rebuilt on demand and consumed
+by higher-level experiments.
+
+The lab deliberately separates infrastructure provisioning from workload logic,
+allowing architectural ideas to be evaluated without embedding environment
+creation into every experiment. Related repositories build on this foundation and
+focus on the systems questions they are intended to explore.
 
 ## Requirements
 
